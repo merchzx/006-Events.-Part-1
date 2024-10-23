@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 02</title>
+</head>
+
+<body>
+    R: <input id="input1" type="text">
+    <br/>
+   H:  <input id="input2" type="text">
+    <br/>
+    <button type="submit">Показать Результат</button>
+    <div id="res">
+
+    </div>
+    <script>
+        let input1 =document.querySelector("#input1")
+        let input2 =document.querySelector("#input2")
+        let button= document.querySelector("button")
+
+        let Res= document.getElementById("res")
+        button.addEventListener("click",function() {
+            Res.innerText = `\nV : ${3.14*(input1.value*input1.value)*input2.value}`
+        })
+
+
+        /*
+        Задание:
+        Напишите сценарий, который вычисляет объем цилиндра по параметрам, которые вводит пользователь.
+        Для расчета используйте формулу - V=π * r в квадрате * h
+        Разместите на странице два поля ввода - первое для радиуса цилиндра, второе для высоты цилиндра.
+        Объем цилиндра выведите в тело страницы.
+        */
+    </script>
+</body>
+
+</html>
